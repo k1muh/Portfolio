@@ -12,21 +12,101 @@
   </head>
 
   <body>
-    <div class="container-fluid p-3 my-0 bg-dark text-white">
-      <h1>Kim's Portfolio</h1>
-    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Design and Art
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">3D stuff</a></li>
+                  <li><a class="dropdown-item" href="#">2D stuff</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Games
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Sítio de Pano</a></li>
+                  <li><a class="dropdown-item" href="#">Silver Plague</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <div class="flex-shrink-0 p-3 bg-white" style="width: 280px">
-      <button data-bs-toggle="collapse" data-bs-target="#burgerbutton">
-        =
-      </button>
-      <div id="burgerbutton" class="collapse">
-        <a href="#">Home</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/designart.html">Design and Art</a>
-        <a href="pages/games.html">Games</a>
+    <main>
+      <div class="container mt-3">
+        <h1>About me</h1>
+        <p>This is an introduction to my own stuff. Hi</p>
       </div>
-    </div>
+
+      <div class="container p-3">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+            class="card-img-top"
+            alt="designart related"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Design and Art</h5>
+            <p class="card-text">Some of my Design and Art stuff.</p>
+            <a href="#" class="btn btn-primary">Ready to blow your mind</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container p-3">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+            class="card-img-top"
+            alt="designart related"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Games</h5>
+            <p class="card-text">Some of my Games stuff.</p>
+            <a href="#" class="btn btn-primary">Ready to blow your mind</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
