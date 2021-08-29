@@ -63,7 +63,10 @@
                 >
                   CVs
                 </button>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                <ul
+                  class="dropdown-menu bg-dark"
+                  aria-labelledby="dropdownMenuButton1"
+                >
                   <li class="nav-item">
                     <a
                       class="nav-link active"
@@ -111,7 +114,9 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Sítio de Pano</h5>
-                <p class="card-text">Sítio de Pano is a mobile game made for elder people.</p>
+                <p class="card-text">
+                  Sítio de Pano is a mobile game made for elder people.
+                </p>
                 <a
                   href="https://drive.google.com/file/d/1040-_mdton6XhLkIcaPOga5bwPPpK8JX/view?usp=sharing"
                   class="btn btn-primary"
@@ -124,10 +129,22 @@
 
           <div class="col">
             <div class="card border-0">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#doctorPog"
+              >
+                <img
+                  src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+                  class="card-img-top"
+                  alt="silver-plague"
+                />
+              </button>
               <img
                 src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
                 class="card-img-top"
-                alt="sitio-pano"
+                alt="silver-plague"
               />
               <div class="card-body">
                 <h5 class="card-title">Silver Plague</h5>
@@ -141,13 +158,69 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#doctorPog"
+            >
+              <img
+                src="../assets/images/doctor-pog.jpg"
+                class="card-img"
+                alt="doctorPog"
+              />
+            </button>
+            <div
+              class="modal fade"
+              id="doctorPog"
+              tabindex="-1"
+              aria-labelledby="doctorPogLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="doctorPogLabel">Doctor Pog</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="../assets/images/doctor-pog.jpg"
+                      class="card-img"
+                      alt="doctorPog"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="text-muted bg-dark mt-3 pb-2">
       <div class="container pt-2">
         <p class="mb-0">
           <i class="text-white">
-            <a href="mailto: kim.horioka@gmail.com" target="_blank"class="btn">
+            <a href="mailto: kim.horioka@gmail.com" target="_blank" class="btn">
               <img
                 src="../assets/svg/envelope-fill.svg"
                 height="32"
@@ -158,7 +231,7 @@
           kim.horioka@gmail.com
         </p>
         <p class="mb-0">
-          <a href="https://wa.me/5511966641667" target="_blank"class="btn">
+          <a href="https://wa.me/5511966641667" target="_blank" class="btn">
             <img
               src="../assets/svg/whatsapp.svg"
               height="32"
@@ -168,7 +241,11 @@
           (11)96664-1667
         </p>
         <p class="mb-0">
-          <a href="https://www.linkedin.com/in/kimhorioka/" target="_blank" class="btn">
+          <a
+            href="https://www.linkedin.com/in/kimhorioka/"
+            target="_blank"
+            class="btn"
+          >
             <img src="../assets/svg/linkedin.svg" height="32" alt="linkedin" />
           </a>
           Kim Horioka
